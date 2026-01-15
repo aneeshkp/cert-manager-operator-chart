@@ -117,6 +117,22 @@ The update-bundle.sh script:
 - Applies minimal fixes for non-OLM environments
 - Preserves OpenShift API stub CRDs
 
+## Update Pull Secret
+
+Red Hat pull secrets expire (typically yearly). To update:
+
+```bash
+# Option A: Using system podman auth (after re-login)
+podman login registry.redhat.io
+./scripts/update-pull-secret.sh
+
+# Option B: Using pull secret file
+./scripts/update-pull-secret.sh ~/new-pull-secret.txt
+
+# Restart pods to use new secret
+kubectl rollout restart deployment -n cert-manager --all
+```
+
 ## Non-OpenShift Compatibility
 
 This chart includes workarounds for running the Red Hat operator outside OpenShift:
@@ -145,5 +161,6 @@ cert-manager-operator-chart/
 └── scripts/
     ├── cleanup.sh               # Uninstall and delete CRDs
     ├── update-bundle.sh         # Update to new bundle version
+    ├── update-pull-secret.sh    # Update expired pull secret
     └── post-install-message.sh  # Post-install instructions
 ```

@@ -140,6 +140,7 @@ cert-manager-operator-chart/
 │   └── service-*.yaml                     # Metrics service
 └── scripts/
     ├── update-bundle.sh                   # Extract new bundle version
+    ├── update-pull-secret.sh              # Update expired pull secret
     ├── cleanup.sh                         # Uninstall and delete CRDs
     └── post-install-message.sh            # Post-install hook
 ```
