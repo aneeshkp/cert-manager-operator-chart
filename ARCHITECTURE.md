@@ -10,6 +10,9 @@ Deploy Red Hat cert-manager Operator on vanilla Kubernetes (AKS, EKS, GKE) witho
 | [openshift/jetstack-cert-manager](https://github.com/openshift/jetstack-cert-manager) | Operand (Red Hat fork) |
 | [lburgazzoli/olm-extractor](https://github.com/lburgazzoli/olm-extractor) | Extract OLM bundles for non-OLM clusters |
 
+**OLM Bundle:** `registry.redhat.io/cert-manager/cert-manager-operator-bundle`
+- [Red Hat Catalog](https://catalog.redhat.com/software/containers/cert-manager/cert-manager-operator-bundle)
+
 ## Architecture
 
 ```
