@@ -94,7 +94,7 @@ pullSecretFile: ~/pull-secret.txt
 | cert-manager Operator | v1.15.2 |
 | cert-manager | v1.15.x |
 
-**OLM Bundle:** `registry.redhat.io/cert-manager/cert-manager-operator-bundle` ([Red Hat Catalog](https://catalog.redhat.com/software/containers/cert-manager/cert-manager-operator-bundle))
+**OLM Bundle:** `registry.redhat.io/cert-manager/cert-manager-operator-bundle` ([Red Hat Catalog](https://catalog.redhat.com/en/software/container-stacks/detail/64f1ad6f3af5362f09c9ce16))
 
 ## Verify Installation
 
